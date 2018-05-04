@@ -1,0 +1,1 @@
+'(ROOT\n  (FRAG\n    (FRAG\n      (ADJP (JJ mary))\n      (S\n        (VP (VBD drove)\n          (NP (DT the) (NN car))\n          (ADVP (RB carefully)))))\n    (CC and)\n    (FRAG\n      (NP (NN john))\n      (VP (VBD drove)\n        (ADVP (RB carelessly))))))'
