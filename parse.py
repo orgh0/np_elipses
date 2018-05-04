@@ -9,10 +9,10 @@ def Np_Extractor(parsed_sentence, tree_struct):
     return list(y.subtrees(filter=lambda x: x.label()=='NP')
 
 def Constituent_Checker(chunk):
-    return len(chunk.subtrees(filter=lambda x: x.label()=='NNS' or 'NNP' or 'NNPS'))
+    return len(chunk.subtrees(filter=lambda x: x.label()=='NNS' or 'NNP' or 'NN' or 'NNPS'))
 
 def Chunk_Validity_Checker(chunk):
-    return len(chunk.subtrees(filter=lambda x:x.label() == 'JJ')
+    return len(chunk.subtrees(filter=lambda x:x.label() == 'JJ' or 'DT' or 'CD'))
 
 def main():
     final_list[]
