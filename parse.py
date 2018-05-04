@@ -1,31 +1,28 @@
-from stanfordcorenlp import StanfordCoreNlp
+from stanfordcorenlp import StanfordCoreNLP
 from nltk.tree import *
-import re
-import sentences
 
-nlp = StanfordCoreNLP(r'../stanford-corenlp-full-2018-02-27)
-        
-def Np_Extractor(parsed_sentence, tree_struct):
-    return list(y.subtrees(filter=lambda x: x.label()=='NP')
 
-def Constituent_Checker(chunk):
-    return len(chunk.subtrees(filter=lambda x: x.label()=='NNS' or 'NNP' or 'NN' or 'NNPS'))
+nlp = StanfordCoreNLP(r'../stanford-corenlp-full-2018-02-27')
 
-def Chunk_Validity_Checker(chunk):
-    return len(chunk.subtrees(filter=lambda x:x.label() == 'JJ' or 'DT' or 'CD'))
 
-def main():
-    final_list[]
-    sentence = "Hey there this is a sentence"
+def Extractor(parsed_tree, label_list):
+    return list(parsed_tree.subtrees(filter=lambda x: x.label() in label_list))
+
+def main(sentences):
+    final_set = set([])
     for sentence in sentences:
-        x = nlp.dependency_parse(sentence)
+        x = nlp.parse(sentence)
+        print(x)
         y = Tree.fromstring(x)
-        NPs = NP_extractor(x, y)
+        NPs = Extractor(y, ['NP', 'ADJP'])
         for NP in NPs:
-            if Constituent_Checker(NP) <= 0 :
-                if Chunk_Validity_Checker >= 0:
-                    final_list.append(sentence)
+            if not Extractor(NP, ["JJ", "DT", "CD"]) and Extractor(NP, ["NNS", "NNP", "NN", "NNPS"]):
+                pass
+            else:
+                final_set.add(sentence)
+    return final_set
 
-if __name__== "__main__":
-  main()
-
+if __name__ == "__main__":
+    from sentences import sentences as s
+    result = main(s)
+    print(result)
