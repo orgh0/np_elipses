@@ -1,1 +1,23 @@
-sentences = ["Mary got first position in university of london and john got second"]
+sentences = [
+"Mary got first position in university of london and john got second",
+"John likes to play football on Sundays and tennis on Mondays.",
+"Give the yellow packet to John and the green one to my sister.",
+"I have three packets and she has only two.",
+"Some kids like candies and some don’t.",
+"John can play five instruments, and Mary can play six.",
+"He saw a green ribbon and I saw a black one yesterday.",
+"Peter has looked at many used cars and finally bought a new one.",
+"Talking about cars, I prefer a red one.",
+"Talking about new books, I have two. ",
+"Talking about books, I have two new ones. ",
+"You have got black rabbits, but I have got white ones.",
+"Out of all the plates kept on the table, I think i will have this one.",
+"From all the dresses that John has left”, I chose all these.",
+"Have you read all his books? No, I have only read the third.",
+"As for wine, I prefer Australian.",
+"Keep your papers and I will keep mine.",
+"Let us play football tomorrow morning.",
+"I have many mangoes.",
+"Mary gave chocolates and flowers to John.",
+]
+
