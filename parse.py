@@ -12,7 +12,6 @@ def check_special_occurence(sentence, word_list):
     return bool(set(sentence_word_list) & set(word_list))
 
 
-
 def check_ones(sentence):
     check_list = ['one', 'ones']
     check_tag_list = [('one', 'NN'), ('ones', 'NNS')]

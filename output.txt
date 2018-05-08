@@ -1,3 +1,0 @@
-{'Keep your papers and I will keep mine.', 'Out of all the plates kept on the table, I think i will have this one.', 'Give the yellow packet to John and the green one to my sister.', 'Some kids like candies and some don’t.', 'I have three packets and she has only two.', 'Mary got first position in university of london and john got second', 'He saw a green ribbon and I saw a black one yesterday.', 'Talking about new books, I have two. ', 'As for wine, I prefer Australian.', 'Talking about cars, I prefer a red one.', 'From all the dresses that John has left”, I chose all these.', 'John can play five instruments, and Mary can play six.', 'Peter has looked at many used cars and finally bought a new one.'}
-13
-None
