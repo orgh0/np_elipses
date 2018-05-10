@@ -1,0 +1,1 @@
+sentences = ["Some children like football and some don't"]

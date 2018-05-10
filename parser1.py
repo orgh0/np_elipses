@@ -52,8 +52,6 @@ def main(sentences):
                 # print(sentence)
                 x = nlp.parse(sentence)
                 y = Tree.fromstring(x)
-                print("this is the tree",y)
-                print("this is the parse", x)
                 NPs = Extractor(y, ['NP', 'ADJP'])
                 for NP in NPs:
                     if Extractor(NP, ["JJ", "DT", "CD"]) and not Extractor(NP, ["NNS", "NNP", "NN", "NNPS",
